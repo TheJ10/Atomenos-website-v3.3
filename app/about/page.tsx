@@ -116,16 +116,18 @@ export default function AboutPage() {
           </div>
           <div className="team__grid">
             {[
-              ['H.R.', 'Harish', 'Founder'],
-              ['R.K.', 'Rahul', 'Product & Systems'],
-              ['K.N.', 'Kiran', 'AI & Automation'],
-              ['S.M.', 'Saruk', 'Design & Brand']
-            ].map(([initials, name, role]) => (
+              ['H.S.', 'Harish', 'Co-Founder', 'Design & Experiences'],
+              ['R.R.', 'RahulRaj', 'Co-Founder', 'AI & Automation'],
+              ['K.N.', 'Kiran', 'Co-Founder', 'Engineering & Growth'],
+              ['S.K.', 'Saruk', 'Co-Founder', 'Product Systems & Operations'],
+              ['J.G.', 'Jaspal', 'Co-Founder', 'Strategy & Solutions']
+            ].map(([initials, name, role, specialty]) => (
               <article key={name}>
                 <div className="team__avatar">{initials}</div>
                 <div>
                   <h4>{name}</h4>
                   <p>{role}</p>
+                  <span>{specialty}</span>
                 </div>
               </article>
             ))}
