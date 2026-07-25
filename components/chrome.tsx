@@ -47,7 +47,6 @@ export function Chrome({ index = '01', showLoader = false }: { index?: string; s
           <Image src="/logo.jpeg" alt="" width={22} height={22} />
           ATOMENOS
         </a>
-        <span>EST. 2026 · INDIA / GLOBAL</span>
         <span>{index} / 07</span>
       </header>
       <nav className={`nav ${menu ? 'nav--open' : ''}`} aria-label="Primary navigation">
