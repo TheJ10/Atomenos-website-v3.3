@@ -1,5 +1,5 @@
 'use client';
-
+import Image from "next/image";
 import { Chrome, SiteFooter, Arrow } from './chrome';
 
 export function HomePage() {
@@ -54,9 +54,11 @@ export function HomePage() {
           <div className="venture__card reveal">
             <div className="venture__image">
               <span>RESTAURANT SYSTEMS</span>
-              <img
+              <Image
                 src="/dineflow website image.png"
                 alt="DineFlow Restaurant Management System"
+                fill
+                priority
                 className="venture__heroImage"
               />
             </div>
