@@ -53,7 +53,7 @@ export function HomePage() {
           <div className="section-tag reveal"><i /> 03 &mdash; FEATURED WORK</div>
           <div className="venture__card reveal">
             <div className="venture__image">
-              <span>RESTAURANT SYSTEMS</span>
+              <p>RESTAURANT SYSTEMS</p>
               <Image
                 src="/dineflow website image.png"
                 alt="DineFlow Restaurant Management System"
