@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Chrome, SiteFooter, Arrow } from '../../components/chrome';
 import { PageHeader } from '../../components/page-header';
 import { Capabilities } from '../../components/capabilities';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Capabilities — Atomenos',
@@ -31,6 +32,13 @@ export default function CapabilitiesPage() {
           <div className="venture__card reveal">
             <div className="venture__image">
               <span>START A PROJECT</span>
+              <Image
+                src="/capabilities-contact.png"
+                alt="From complexity to clarity"
+                fill
+                priority={false}
+                className="venture__art"
+              />
               <div className="venture__object"><i /><i /><i /></div>
             </div>
             <div className="venture__copy">
