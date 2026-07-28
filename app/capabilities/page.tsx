@@ -39,7 +39,6 @@ export default function CapabilitiesPage() {
                 priority={false}
                 className="venture__art"
               />
-              <div className="venture__object"><i /><i /><i /></div>
             </div>
             <div className="venture__copy">
               <p>NEXT STEP</p>
