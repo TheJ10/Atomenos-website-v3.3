@@ -9,7 +9,7 @@ export function HomePage() {
       <main id="top">
         <section className="hero">
           <div className="hero__grid" />
-          <p className="hero__intro">Software, AI, and automation, designed around how your business actually works.</p>
+          <p className="hero__intro"></p>
           <div className="hero__orb" aria-hidden="true"><div /><div /><div /></div>
           <h1>WE BUILD<br /><span>WHAT&rsquo;S</span><br />NEXT TO LAST.</h1>
           <div className="hero__bottom">
