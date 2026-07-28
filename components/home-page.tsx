@@ -54,7 +54,11 @@ export function HomePage() {
           <div className="venture__card reveal">
             <div className="venture__image">
               <span>RESTAURANT SYSTEMS</span>
-              <div className="venture__object"><i /><i /><i /></div>
+              <img
+                src="/dineflow website image.png"
+                alt="DineFlow Restaurant Management System"
+                className="venture__heroImage"
+              />
             </div>
             <div className="venture__copy">
               <p>QR ORDERING + MANAGEMENT DASHBOARD</p>
