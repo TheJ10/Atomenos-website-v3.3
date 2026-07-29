@@ -52,7 +52,12 @@ export default function CaseStudiesPage() {
           <div className="venture__card">
             <div className="venture__image">
               <span>NEXT PROJECT</span>
-              <div className="venture__object"><i /><i /><i /></div>
+              <Image
+                src="/about-contact.png"
+                alt="Operations workspace"
+                fill
+                className="venture__art"
+              />
             </div>
             <div className="venture__copy">
               <p>OPEN CONVERSATION</p>
