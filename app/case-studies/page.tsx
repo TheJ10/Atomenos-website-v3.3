@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Chrome, SiteFooter, Arrow } from '../../components/chrome';
 import { PageHeader } from '../../components/page-header';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Case Studies — Atomenos',
@@ -23,7 +24,12 @@ export default function CaseStudiesPage() {
           <a href="/case-studies/dineflow" className="venture__card lift" style={{ display: 'grid' }}>
             <div className="venture__image">
               <span>IN PRODUCTION</span>
-              <div className="venture__object"><i /><i /><i /></div>
+                <Image
+                  src="/dineflow website image.png"
+                  alt="DineFlow Restaurant Management System"
+                  fill
+                  className="venture__art"
+                />
             </div>
             <div className="venture__copy">
               <p>DINEFLOW &middot; QR ORDERING + MANAGEMENT DASHBOARD</p>
