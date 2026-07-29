@@ -3,6 +3,7 @@ import { Chrome, SiteFooter, Arrow } from '../../components/chrome';
 import { PageHeader } from '../../components/page-header';
 import { ARTICLES } from '../../lib/journal';
 import { JournalGrid } from '../../components/journal-grid';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Journal — Atomenos',
@@ -27,7 +28,13 @@ export default function JournalPage() {
           <a href={`/journal/${featured.slug}`} className="venture__card lift" style={{ display: 'grid' }}>
             <div className="venture__image">
               <span>FEATURED ENTRY</span>
-              <div className="venture__object"><i /><i /><i /></div>
+              <Image
+                src="/journal-automation.png"
+                alt="Automation workflow planning"
+                fill
+                className="venture__art"
+                priority
+              />
             </div>
             <div className="venture__copy">
               <p>{featured.date} &middot; {featured.category.toUpperCase()} &middot; {featured.read}</p>
