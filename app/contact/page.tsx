@@ -30,20 +30,46 @@ export default function ContactPage() {
           <div className="form-grid">
             <ContactForm />
 
-            <div className="map-box">
+            <div
+              className="map-box"
+              style={{
+                position: "relative",
+                overflow: "hidden",
+              }}
+            >
               <video
-                className="contact-video"
                 autoPlay
                 muted
                 loop
                 playsInline
                 preload="auto"
                 aria-hidden="true"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover", // fills the entire box
+                  objectPosition: "center",
+                  display: "block",
+                  filter: "brightness(1.15) saturate(1.08) contrast(1.03)", // makes it brighter
+                  transform: "scale(1.02)", // slightly zooms to remove any edges
+                }}
               >
                 <source src="/contactgif.mp4" type="video/mp4" />
               </video>
 
-              <span className="map-label">
+              <span
+                style={{
+                  position: "absolute",
+                  left: "32px",
+                  bottom: "28px",
+                  zIndex: 10,
+                  color: "#151515",
+                  fontSize: "12px",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                }}
+              >
                 ATOMENOS &middot; INDIA / GLOBAL
               </span>
             </div>
