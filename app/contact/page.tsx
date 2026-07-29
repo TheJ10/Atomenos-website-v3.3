@@ -31,9 +31,21 @@ export default function ContactPage() {
             <ContactForm />
 
             <div className="map-box">
-              <div className="hero__grid" />
-              <span>ATOMENOS &middot; INDIA / GLOBAL</span>
-              <div className="map-pin" />
+              <video
+                className="contact-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                aria-hidden="true"
+              >
+                <source src="/contactgif.mp4" type="video/mp4" />
+              </video>
+
+              <span className="map-label">
+                ATOMENOS &middot; INDIA / GLOBAL
+              </span>
             </div>
           </div>
         </section>
