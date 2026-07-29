@@ -151,7 +151,12 @@ export default function AboutPage() {
           <div className="venture__card">
             <div className="venture__image">
               <span>WE&rsquo;RE HIRING</span>
-              <div className="venture__object"><i /><i /><i /></div>
+                <Image
+                  src="/case-contact.png"
+                  alt="Building systems together"
+                  fill
+                  className="venture__art"
+                />
             </div>
             <div className="venture__copy">
               <p>OPEN ROLES / ONGOING</p>
