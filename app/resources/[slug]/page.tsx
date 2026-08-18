@@ -11,7 +11,14 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const { resource } = resourceNav(params.slug);
   if (!resource) return {};
-  return { title: `${resource.title} — Atomenos Resources`, description: resource.description };
+
+  return {
+    title: `${resource.title} — Atomenos Resources`,
+    description: resource.description,
+    alternates: {
+      canonical: `/resources/${resource.slug}`,
+    },
+  };
 }
 
 function PdfIcon() {
