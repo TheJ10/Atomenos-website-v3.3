@@ -11,7 +11,14 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const { chapter } = chapterNav(params.slug);
   if (!chapter) return {};
-  return { title: `${chapter.title} — Atomenos Journey`, description: chapter.philosophy };
+
+  return {
+    title: `${chapter.title} — Atomenos Journey`,
+    description: chapter.philosophy,
+    alternates: {
+      canonical: `/journey/${chapter.slug}`,
+    },
+  };
 }
 
 export default function JourneyPage({ params }: { params: { slug: string } }) {
