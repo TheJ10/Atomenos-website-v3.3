@@ -6,8 +6,12 @@ import { JournalGrid } from '../../components/journal-grid';
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: 'Journal — Atomenos',
-  description: 'Thoughts from building.'
+  title: 'Journal — Business Systems, Automation & AI | Atomenos',
+  description:
+    'Field notes from Atomenos on business automation, software systems, AI, and the operational problems worth solving.',
+  alternates: {
+    canonical: '/journal',
+  },
 };
 
 export default function JournalPage() {

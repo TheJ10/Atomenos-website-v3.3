@@ -4,8 +4,12 @@ import { PageHeader } from '../../components/page-header';
 import { RESOURCES } from '../../lib/resources';
 
 export const metadata: Metadata = {
-  title: 'Resources — Atomenos',
-  description: 'Guides and templates.'
+  title: 'Resources — Guides & Templates | Atomenos',
+  description:
+    'Practical guides, frameworks, and templates from Atomenos for scoping software, automation, AI systems, and business operations.',
+  alternates: {
+    canonical: '/resources',
+  },
 };
 
 export default function ResourcesPage() {

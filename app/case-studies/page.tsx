@@ -4,8 +4,12 @@ import { PageHeader } from '../../components/page-header';
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: 'Case Studies — Atomenos',
-  description: 'Real work and measurable outcomes.'
+  title: 'Case Studies — Business Systems Built by Atomenos',
+  description:
+    'See how Atomenos turns real operational problems into working systems, including DineFlow, a QR ordering and restaurant management platform.',
+  alternates: {
+    canonical: '/case-studies',
+  },
 };
 
 export default function CaseStudiesPage() {

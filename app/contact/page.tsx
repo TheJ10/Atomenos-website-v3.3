@@ -3,8 +3,12 @@ import { Chrome, SiteFooter, Arrow } from '../../components/chrome';
 import { Faq, ContactForm } from '../../components/faq';
 
 export const metadata: Metadata = {
-  title: 'Contact — Atomenos',
-  description: 'Start a conversation.'
+  title: 'Contact Atomenos — Start a Project',
+  description:
+    'Talk to Atomenos about software, AI, automation, business systems, or digital experiences built around how your business actually operates.',
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {

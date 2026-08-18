@@ -5,8 +5,12 @@ import { PageHeader } from '../../components/page-header';
 import { GrowthDiagramLarge } from '../../components/cap-diagrams';
 
 export const metadata: Metadata = {
-  title: 'About — Atomenos',
-  description: 'Who we are, why we exist, and where Atomenos is going.'
+  title: 'About Atomenos — Building Systems Around Businesses',
+  description:
+    'Learn how Atomenos approaches software, AI, automation, and business systems by understanding how a business actually works before deciding what to build.',
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 export default function AboutPage() {

@@ -5,8 +5,12 @@ import { Capabilities } from '../../components/capabilities';
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: 'Capabilities — Atomenos',
-  description: 'Systems built to solve overlooked problems.'
+  title: 'Capabilities — AI, Automation & Business Systems | Atomenos',
+  description:
+    'Explore Atomenos capabilities across AI automation, business systems, digital experiences, growth systems, and custom software built around how businesses operate.',
+  alternates: {
+    canonical: '/capabilities',
+  },
 };
 
 export default function CapabilitiesPage() {
