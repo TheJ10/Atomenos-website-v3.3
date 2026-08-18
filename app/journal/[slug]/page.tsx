@@ -11,7 +11,14 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const { article } = articleNav(params.slug);
   if (!article) return {};
-  return { title: `${article.title} — Atomenos Journal`, description: article.dek };
+
+  return {
+    title: `${article.title} — Atomenos Journal`,
+    description: article.dek,
+    alternates: {
+      canonical: `/journal/${article.slug}`,
+    },
+  };
 }
 
 function PdfIcon() {

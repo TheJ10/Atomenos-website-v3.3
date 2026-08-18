@@ -4,8 +4,12 @@ import { PageHeader } from '../../../components/page-header';
 import { MobileOrderMockup, KitchenDashboardMockup, AdminDashboardMockup, ArchitectureDiagram, UserJourneyDiagram } from '../../../components/mockups';
 
 export const metadata: Metadata = {
-  title: 'DineFlow — Atomenos Case Studies',
-  description: 'A full QR ordering and restaurant management system, from paper tickets to one live system.'
+  title: 'DineFlow — QR Ordering & Restaurant Management System | Atomenos',
+  description:
+    'See how Atomenos built DineFlow, a QR ordering, kitchen display, and restaurant management system that replaced paper orders with one live system.',
+  alternates: {
+    canonical: '/case-studies/dineflow',
+  },
 };
 
 export default function DineFlowCaseStudy() {
